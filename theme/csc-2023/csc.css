@@ -1,0 +1,64 @@
+/* Define color properties for complete document */
+:root {
+    --csc-magenta:   #830051;
+    --csc-teal:      #006778;
+    --csc-grey:      #5e6a71;
+    --csc-green:     #7dc242;
+    --csc-orange:    #ff5800;
+    --csc-purple:    #ea1d77;
+    --csc-turquoise: #00c7b2;
+    --csc-dark-blue: #002f5f;
+    --csc-blue:      #0082bb;
+    --csc-highlight: #ffc0b0;
+}
+/* Define Screen geometry + base size for all texts */
+:root {
+    --xsize:  1920px;
+    --ysize:  1080px;
+    --xmargin:  74px;
+    --ymargin:  84px;
+    --fontsize: 50px;
+}
+/* Define default fonts, from fonts.css */
+:root {
+    --csc-font-family: 'Noto Sans';
+    --csc-code-font-family: 'Inconsolata';
+}
+
+
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+
+/* Check if below is needed */
+/*body {
+    background-color: black;
+}*/
+
+/* Define the default slide backround */
+.slide-background {
+    background: url("img/background_no_logo.png");
+    background-size: contain; /*resize the background to make sure image is fully visible*/
+}
+
+/* Define the default font stuff */
+.reveal {
+    font-family: var(--csc-font-family);
+    font-size:   var(--fontsize);
+    color:       var(--csc-grey);
+    font-weight: normal;
+}
+
+/* Define default text setup on slide */
+.reveal .slides {
+    text-align:  left;
+    line-height: 1.4;
+}
+
+/* This is a test, to see if all h2,... etc from original can be replaced with * */
+.reveal * {
+    margin-left:  var(--xmargin);
+    margin-right: var(--xmargin);
+    max-width:    calc(var(--xsize) - 2 * var(--xmargin));
+    margin-top: 1ex; /*this one was originally only for p */
+  }
