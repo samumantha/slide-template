@@ -61,4 +61,17 @@
     margin-right: var(--xmargin);
     max-width:    calc(var(--xsize) - 2 * var(--xmargin));
     margin-top: 1ex; /*this one was originally only for p */
-  }
+}
+
+/* Samus own stuff */
+
+
+/* Define Note box*/
+.box {
+    background-color: #ff5800; 
+    border-radius: 15px;
+    padding: 1em; /* how much space between content and box border*/
+    border: 5px solid blue; 
+}
+
+
